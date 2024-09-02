@@ -49,6 +49,8 @@ with db.connect() as connection:
     # Query 3 - select only "Queen" from the "Artist" table
     select_query = artist_table.select().where(artist_table.c.Name == "Queen")
 
+    
+
 
     results = connection.execute(select_query)
     for result in results:
